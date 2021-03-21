@@ -15,8 +15,6 @@ export namespace Components {
         "label": string;
         "type": 'email' | 'text' | 'password';
     }
-    interface DsPage {
-    }
     interface DsSwitch {
         "checked": boolean;
     }
@@ -34,12 +32,6 @@ declare global {
         prototype: HTMLDsInputElement;
         new (): HTMLDsInputElement;
     };
-    interface HTMLDsPageElement extends Components.DsPage, HTMLStencilElement {
-    }
-    var HTMLDsPageElement: {
-        prototype: HTMLDsPageElement;
-        new (): HTMLDsPageElement;
-    };
     interface HTMLDsSwitchElement extends Components.DsSwitch, HTMLStencilElement {
     }
     var HTMLDsSwitchElement: {
@@ -49,7 +41,6 @@ declare global {
     interface HTMLElementTagNameMap {
         "ds-button": HTMLDsButtonElement;
         "ds-input": HTMLDsInputElement;
-        "ds-page": HTMLDsPageElement;
         "ds-switch": HTMLDsSwitchElement;
     }
 }
@@ -63,8 +54,6 @@ declare namespace LocalJSX {
         "label"?: string;
         "type"?: 'email' | 'text' | 'password';
     }
-    interface DsPage {
-    }
     interface DsSwitch {
         "checked"?: boolean;
         "onApolloChange"?: (event: CustomEvent<boolean>) => void;
@@ -72,7 +61,6 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "ds-button": DsButton;
         "ds-input": DsInput;
-        "ds-page": DsPage;
         "ds-switch": DsSwitch;
     }
 }
@@ -82,7 +70,6 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "ds-button": LocalJSX.DsButton & JSXBase.HTMLAttributes<HTMLDsButtonElement>;
             "ds-input": LocalJSX.DsInput & JSXBase.HTMLAttributes<HTMLDsInputElement>;
-            "ds-page": LocalJSX.DsPage & JSXBase.HTMLAttributes<HTMLDsPageElement>;
             "ds-switch": LocalJSX.DsSwitch & JSXBase.HTMLAttributes<HTMLDsSwitchElement>;
         }
     }

@@ -4,12 +4,12 @@
       <h1>Sign up</h1>
       <span>Everything you can imagine is real.</span>
     </div>
-    <div class="container__signup" data-theme="light">
+    <div class="container__signup" data-theme="light" #dataTheme>
       <ds-switch class="dark-mode__toggle" (apolloChange)="darkmodeToggle(ev)"></ds-switch>
       <ds-input label="Username"></ds-input>
       <ds-input label="Email" type="email"></ds-input>
       <ds-input label="Password" type="password"></ds-input>
-      <ds-button block (click)="darkmodeToggle()">Sign up</ds-button>
+      <ds-button block>Sign up</ds-button>
       <span>Already have an account? <a href="#" title="">Sign in</a></span>
     </div>
   </div>

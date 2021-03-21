@@ -2,6 +2,34 @@
 
 @import '@monorepo/design-system/www/build/design-system.css';
 
+:root {
+  --primary-light: #C7BEE1;
+  --primary: #8E7CC3;
+  --primary-dark: #5F4CA1;
+
+  --primary-light-rgb: 170,156,224;
+  --primary-rgb: 133,114,210;
+  --primary-dark-rgb: 104,85,193;
+
+  --white: #FFFFFF;
+
+  --gray-light: #E9E7E9;
+  --gray: #C9C4C9;
+  --gray-dark: #A59DA5;
+
+  --background: #FFFFFF;
+  --on-background: #0f0b0f;
+
+  --radius: 8px;
+
+  --font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+[data-theme="dark"] {
+  --background: #0f0b0f;
+  --on-background: #FFFFFF;
+}
+
 *,
 *:after,
 *:before {
