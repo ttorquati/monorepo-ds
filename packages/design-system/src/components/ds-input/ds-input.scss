@@ -1,0 +1,70 @@
+:host {
+  width: 100%;
+  height: 46px;
+  display: block;
+  position: relative;
+  font-family: var(--font-family);
+  font-weight: 600;
+}
+
+.ds-input {
+  width: 100%;
+  height: 100%;
+  padding: 12px 12px;
+  background: none;
+  border: 2px solid var(--gray-dark);
+  border-radius: var(--radius);
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  box-sizing: border-box;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: border-color .3s ease;
+
+  &:hover {
+    border-color: var(--primary-light);
+  }
+
+  &:focus {
+    border-color: var(--primary);
+  }
+}
+
+.ds-input__label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 0 4px;
+  cursor: text;
+  font-weight: 600;
+  color: var(--gray-dark);
+
+  transition: top .2s ease-in,
+    left .2s ease-in,
+    font-size .2s ease-in,
+    color .2s ease-in,
+    background-color .2s ease-in;
+
+  background: var(--background);
+}
+
+.ds-input:focus ~ .ds-input__label,
+.ds-input:not(:placeholder-shown).ds-input:not(:focus) ~ .ds-input__label {
+  top: -8px;
+  left: 9px;
+  font-size: 0.8rem;
+}
+
+.ds-input:focus ~ .ds-input__label {
+  color: var(--primary);
+}
+
+.ds-input:not(:placeholder-shown).ds-input:not(:focus) ~ .ds-input__label {
+  color: var(--gray-dark);
+}
+

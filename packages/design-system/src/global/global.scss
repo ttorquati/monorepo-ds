@@ -1,0 +1,27 @@
+:root {
+  --primary-light: #D079D9;
+  --primary: #BC40C8;
+  --primary-dark: #971CA7;
+
+  --primary-light-rgb: 208, 121, 217;
+  --primary-rgb: 188, 64, 200;
+  --primary-dark-rgb: 151, 28, 167;
+
+  --white: #fff;
+
+  --gray-light: #E9E7E9;
+  --gray: #C9C4C9;
+  --gray-dark: #A59DA5;
+
+  --background: #ffffff;
+  --on-background: #0f0b0f;
+
+  --radius: 8px;
+
+  --font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+[data-theme="dark"] {
+  --background: #0f0b0f;
+  --on-background: #ffffff;
+}

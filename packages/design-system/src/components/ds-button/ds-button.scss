@@ -1,0 +1,43 @@
+:host {
+  display: inline-block;
+  font-family: var(--font-family);
+}
+
+:host([block]) {
+  width: 100%;
+  .ds-button {
+    width: 100%;
+  }
+}
+
+.ds-button {
+  padding: 16px 32px;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--primary);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white);
+  transition: background-color .2s ease-in;
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-dark);
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(var(--primary-light-rgb), 0.4);
+  }
+
+  &:active {
+    background-color: var(--primary-light);
+  }
+}
+
+.ds-button[disabled] {
+  background: var(--gray-light);
+  color: var(--gray-dark);
+  cursor: auto;
+}
