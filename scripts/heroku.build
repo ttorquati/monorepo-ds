@@ -1,3 +1,5 @@
+#!/bin/sh -e
+
 usage() {
   echo "OVERVIEW: Build apps according to BUILD_ENV value. Meant to be used for Heroku deployment"
   exit
