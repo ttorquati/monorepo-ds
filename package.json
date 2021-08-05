@@ -10,9 +10,11 @@
   },
   "author": "ttorquati <ttorquati@gmail.com>",
   "license": "MIT",
-  "scripts": {  
+  "scripts": {
+    "build:angular": "yarn workspace @monorepo/angular ng build --prod",
     "angular": "yarn workspace @monorepo/angular ng serve",
     "build:design-system": "yarn workspace @monorepo/design-system build",
-    "design-system": "yarn workspace @monorepo/design-system start"
+    "design-system": "yarn workspace @monorepo/design-system start",
+    "heroku-postbuild": "./scripts/heroku.build"
   }
 }
