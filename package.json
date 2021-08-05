@@ -10,7 +10,9 @@
   },
   "author": "ttorquati <ttorquati@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "angular": "workspace @monorepo/angular ng serve"
+  "scripts": {  
+    "angular": "yarn workspace @monorepo/angular ng serve",
+    "build:design-system": "yarn workspace @monorepo/design-system build",
+    "design-system": "yarn workspace @monorepo/design-system start"
   }
 }

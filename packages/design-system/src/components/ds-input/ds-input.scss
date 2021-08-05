@@ -61,11 +61,14 @@
   font-size: 0.8rem;
 }
 
+.ds-input:hover ~ .ds-input__label {
+  color: var(--primary-light);
+}
+
 .ds-input:focus ~ .ds-input__label {
   color: var(--primary);
 }
 
-.ds-input:not(:placeholder-shown).ds-input:not(:focus) ~ .ds-input__label {
-  color: var(--gray-dark);
-}
-
+// .ds-input:not(:placeholder-shown).ds-input:not(:focus) ~ .ds-input__label {
+//   color: var(--gray-dark);
+// }

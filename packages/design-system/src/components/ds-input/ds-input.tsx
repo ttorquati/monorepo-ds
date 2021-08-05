@@ -1,11 +1,11 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'ds-input',
   styleUrl: 'ds-input.scss',
   shadow: true,
 })
-export class DsInput {
+export class DsInput implements ComponentInterface{
   private rangeId: number = Math.random() * 99999999;
   
   @Prop({
@@ -33,5 +33,4 @@ export class DsInput {
       </Host>
     );
   }
-
 }
