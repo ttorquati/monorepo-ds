@@ -11,10 +11,9 @@
   "author": "ttorquati <ttorquati@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build:angular": "yarn workspace @monorepo/angular ng build --prod",
     "angular": "yarn workspace @monorepo/angular ng serve",
-    "build:design-system": "yarn workspace @monorepo/design-system build",
     "design-system": "yarn workspace @monorepo/design-system start",
-    "heroku-postbuild": "./scripts/heroku.build"
+    "build:angular": "yarn workspace @monorepo/angular ng build --prod",
+    "build:design-system": "yarn workspace @monorepo/design-system build"
   }
 }
